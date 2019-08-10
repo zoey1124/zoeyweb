@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>zoeysun</title>
+        <link rel="stylesheet" href="styles.css"> 
+    </head>
+
+
+    <body>
+        
+        <header>
+            <h1>Mengzhu (Zoey) Sun</h1>
+        </header>
+        
+        <section> 
+            <img src="image/zoey.JPEG" height="270" width="400">
+        </br>
+            <p>Hi! My name is Zoey.</p>
+            <p>I'm a CS learner from <a href="https://www.berkeley.edu">UC Berkeley</a>.</p>
+            <p>I like <a href="gallary.html">cooking</a> and <a href="https://www.instagram.com/zoey_sun_1124/">taking photos</a>.</p>
+            <p>Check out my resume <a href="https://www.linkedin.com/in/zoey-mengzhu-sun-a18326183/">here</a>!</p>
+        </section>
+
+        <script>
+        function myFnc(e) {
+            e.classlist.toggle("show");
+
+            var elem = document.getElementById("navID"),
+            Style = window.getComputedStyle(elem),
+            right = Style.getPropertyValue("right");
+
+            if(right == "0px") {
+                elem.style.right = "-260px";
+            } else {
+                elem.style.right = "0px";
+            }
+        }
+        </script>
+    </body>
+</html>

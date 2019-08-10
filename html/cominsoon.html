@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Coming Soon</title>
+        <style>
+            body, html {
+                height: 100%;
+                margin: 0;
+                padding:0;
+            }
+            .bgimg {
+                background: url(image/forest.JPEG);
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+                position: relative;
+                color: #fff;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            } 
+            .middle {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            h1 {
+                font-size: 40px;
+                letter-spacing: 30px;
+                font-weight: 100;
+            }
+            #demo {
+                font-weight: lighter;
+                word-spacing: 20px;
+            }
+            hr {
+                margin: auto;
+                border: 1.5px solid #fff;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="bgimg">
+            <div class="middle">
+                <h1>COMING SOON</h1>
+                <hr>
+                <p id="demo" style="font-size: 30px"></p>
+            </div>
+        </div>
+
+        <script>
+            var countDownDate = new Date("Oct 31, 2019 00:00:00").getTime();
+            var countDownfunction = setInterval(function() {
+                var now = new Date().getTime();
+                var distance = countDownDate - now;
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes +"m " + seconds + "s ";
+                if(distance < 0) {
+                    clearInterval(countDownfunction);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+    </body>
+</html>

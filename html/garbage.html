@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>zero waste by 2020!</title>
+        <link rel="stylesheet" href="styles.css"> 
+        <style>
+            * {
+                font-size: 20;
+            }
+            body {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                padding: 15;
+            }
+        </style>
+        <script>
+            function correct() {
+                alert("答对了，你真棒！");
+            }
+            function wrong() {
+                alert("答错了，你要加油！")
+            }
+        </script>
+    </head>
+    <body>
+        <p>中药药渣属于哪种垃圾？</p>
+        <table>
+            <tr>
+                <td><input type="button" value="干垃圾" onclick="wrong()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="湿垃圾" onclick="correct()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="可回收物" onclick="wrong()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="有害垃圾" onclick="wrong()"></td>
+            </tr>
+        </table>
+        <p>龙虾壳属于哪种垃圾？</p>
+        <table>
+            <tr>
+                <td><input type="button" value="干垃圾" onclick="wrong()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="湿垃圾" onclick="correct()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="可回收物" onclick="wrong()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="有害垃圾" onclick="wrong()"></td>
+            </tr>
+        </table>
+        <p>毛衣属于哪种垃圾？</p>
+        <table>
+            <tr>
+                <td><input type="button" value="干垃圾" onclick="correct()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="湿垃圾" onclick="wrong()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="可回收物" onclick="wrong()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="有害垃圾" onclick="wrong()"></td>
+            </tr>
+        </table>
+        <p>玻璃属于哪种垃圾？</p>
+        <table>
+            <tr>
+                <td><input type="button" value="干垃圾" onclick="correct()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="湿垃圾" onclick="wrong()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="可回收物" onclick="wrong()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="有害垃圾" onclick="wrong()"></td>
+            </tr>
+        </table>
+    </body>
+</html>
